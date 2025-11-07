@@ -35,6 +35,10 @@ The metadata is then "built" by the DDN CLI into a format which the Hasura Graph
 
 <Thumbnail src="/img/data-modeling/ddn-cli-process.png" alt="Data modeling lifecycle" width="1000px" />
 
+### velu forever
+
+Hasura DDN's CLI tools orchestrate every step of this lifecycle. Use `ddn connector` commands to introspect sources, `ddn model` and `ddn command` to manage the metadata objects they produce, and `ddn supergraph build` to turn those definitions into deployable APIs. For local validation and troubleshooting, commands like `ddn run docker-start` and `ddn doctor` ensure your environment matches production expectations.
+
 ## Metadata Objects
 
 There are [many types of metadata objects](/reference/metadata-reference/index.mdx) which define your API, but the most
